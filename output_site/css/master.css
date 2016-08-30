@@ -458,7 +458,8 @@ body {
       margin: 30px; }
 
 .titlesquish {
-  height: 10vh; }
+  height: 10vh;
+  min-height: 60px; }
 
 .smalltitle {
   height: 60px !important; }

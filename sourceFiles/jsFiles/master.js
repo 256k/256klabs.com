@@ -10,8 +10,8 @@ $(document).ready(function() {
         $(this).css("cursor", "pointer");
     });
     $(".titlebar > h1").on("click", function(){
-        $(this).parent().addClass("titlesquish");
-        $(".contentwrapper").slideDown();
+        $(this).parent().toggleClass("titlesquish");
+        $(".contentwrapper").slideToggle();
 
 
     });
