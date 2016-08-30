@@ -370,10 +370,36 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: inherit;
+  padding: inherit; }
+
+body {
+  background: #e2e3db; }
+
+.contentwrapper {
+  height: 90vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none; }
+
 .titlebar {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/bk.jpg");
+  background-image: url("../assets/bkdark.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -389,8 +415,50 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); }
+  -webkit-transition: height 600ms ease-in-out;
+  transition: height 600ms ease-in-out; }
   .titlebar h1 {
     text-align: center;
     margin: auto;
-    color: white; }
+    color: white;
+    -webkit-transition: color 600ms ease-in-out;
+    transition: color 600ms ease-in-out; }
+
+.componentBox {
+  width: 100%; }
+  .componentBox .componentTitle {
+    cursor: pointer;
+    width: 100%;
+    height: 30vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    background: black;
+    -webkit-transition: height 300ms ease-in-out;
+    transition: height 300ms ease-in-out; }
+    .componentBox .componentTitle h2 {
+      margin: 10px auto;
+      text-align: center; }
+  .componentBox .componentContent {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    background: white; }
+    .componentBox .componentContent p {
+      margin: 30px; }
+
+.titlesquish {
+  height: 10vh; }
+
+.smalltitle {
+  height: 60px !important; }

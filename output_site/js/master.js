@@ -1,6 +1,20 @@
 $(document).ready(function() {
+    $(".componentTitle").on("click", function(){
+
+        $(this).toggleClass("smalltitle");
+        $(this).siblings(".componentContent").slideToggle(200);
+    });
 
 
+    $(".titlebar > h1").on("mouseenter", function(){
+        $(this).css("cursor", "pointer");
+    });
+    $(".titlebar > h1").on("click", function(){
+        $(this).parent().addClass("titlesquish");
+        $(".contentwrapper").slideDown();
+
+
+    });
 });
 
 
