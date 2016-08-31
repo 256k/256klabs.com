@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".componentTitle").on("click", function(){
 
         $(this).toggleClass("smalltitle");
-        $(this).siblings(".componentContent").slideToggle(200);
+        $(this).siblings(".componentContent").slideToggle(500);
     });
 
 
