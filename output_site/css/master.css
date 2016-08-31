@@ -376,23 +376,23 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #462c58;
+  color: #684381;
   margin: inherit;
   padding: inherit;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
 a:hover {
-  color: #8252a3; }
+  color: #9c5fc6; }
 
 p, li {
   font-size: 18px;
   line-height: 1.5;
-  color: #555; }
+  color: #444; }
 
 ul, li {
   list-style: none;
-  color: #555;
+  color: #444;
   line-height: 1.5em;
   padding: 0; }
 
@@ -511,15 +511,16 @@ body {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       width: 100%; }
       .componentBox .componentContent .workwrapper .workbox {
         margin: 40px 0;
         padding: 0px;
         width: 25%;
+        min-height: 300px;
         max-width: 960px;
         min-width: 150px;
         text-align: center; }
@@ -529,6 +530,8 @@ body {
       text-align: center; }
       .componentBox .componentContent .contactwrapper .contactbox {
         margin: 50px; }
+        .componentBox .componentContent .contactwrapper .contactbox p:first-of-type {
+          font-size: 2em; }
         .componentBox .componentContent .contactwrapper .contactbox p {
           font-size: 1.5em; }
         .componentBox .componentContent .contactwrapper .contactbox li {
@@ -565,6 +568,11 @@ body {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+                -ms-grid-row-align: center !important;
+            align-items: center !important; }
     .workwrapper .workbox {
       width: 90% !important; } }
